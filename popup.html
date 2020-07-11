@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>谷歌访问助手</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                color: #345;
+                font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,Arial,sans-serif;
+                font-size: 9pt;
+            }
+
+            body * {
+                white-space: nowrap;
+            }
+
+            #about {
+                font-size: 10pt;
+                padding: 10px 20px;
+            }
+
+            .header{
+                width: 290px;
+                height: 90px;
+            }
+
+            .header .logo{
+                float:left;
+                margin-bottom: 20px;
+				 margin-left: 5px;
+            }
+
+            .header .logo-content {
+                float:left;
+                margin-left: 10px;
+                padding-top: 8px;
+            }
+
+            .header .title{
+                font-size:24px;
+                margin: 0px 5px;
+            }
+
+            .header .sub-title{
+                font-size:16px;
+                margin: 0px 5px;
+            }
+
+            #about a {
+                cursor: pointer;
+                text-decoration: blink;
+                color: #4285f4;
+                outline : none;
+            }
+
+            #about .footer {
+                height: 15px;
+                color: #789;
+                margin: 5px;
+                padding-top: 5px;
+                border-top: solid 1px #eef;
+                white-space: nowrap;
+            }
+        
+            #about #tips{
+                color: red;
+                font-size: 16px;
+                display: block;
+                padding-bottom: 5px;
+            }
+            .popup_copyright{
+                text-align: center;
+            }
+            #settings{
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                float: right;
+                margin-top: -22px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="about">
+            <div class="header">
+                <div class="logo">
+                    <img src="icons/icon-128.png" width="70"/>
+                </div>
+                <div class="logo-content">
+                    <p class="title">谷歌访问助手</p>
+                    <p class="sub-title">版本：<span id="versionNumber">2.3.0</span></p>
+                </div>
+            </div>
+            <div class="body">
+                <div id="developer">
+                    <div class="name">
+                        <span>谷歌：<a target="_blank" href="https://www.google.com.hk">谷歌搜索</a>&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN">谷歌商店</a></span>
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                </div>
+                <div id="onStatus" style="display: none">
+                </div>
+                <div id="offStatus" style="display: none">
+                    <span id="tips"></span>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="popup_copyright">
+                    &copy; 2020  Veen
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

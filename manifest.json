@@ -1,0 +1,20 @@
+{
+   "background": {
+      "scripts": ["js/sea.js","js/bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_popup": "popup.html"
+   },
+   "description": "翻墙",
+   "icons": {
+      "128": "icons/icon-128.png",
+      "16": "icons/icon.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "18.0.0",
+   "name": "谷歌访问助手",
+   "permissions": [ "proxy", "tabs", "contextMenus", "*://*/*" ,"webRequest", "webRequestBlocking", "unlimitedStorage"],
+   "content_security_policy": "script-src 'self'; object-src 'self'",
+   "version": "2.3.0"
+}
